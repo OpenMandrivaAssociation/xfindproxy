@@ -1,6 +1,6 @@
 Name: xfindproxy
 Version: 1.0.1
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Locate proxy services
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -13,7 +13,11 @@ BuildRequires: libxt-devel >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
 
 %description
-CHECK
+xfindproxy is a program used to locate available proxy services.
+It utilizes the Proxy Management Protocol to communicate with a proxy
+manager. The proxy manager keeps track of all available proxy services,
+starts new proxies when necessary, and makes sure that proxies are shared
+whenever possible.
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -34,6 +38,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xfindproxy
-%{_mandir}/man1/xfindproxy.1x.bz2
-
-
+%{_mandir}/man1/xfindproxy.1x*
