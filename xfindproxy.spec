@@ -23,8 +23,7 @@ whenever possible.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
+%configure2_5x
 
 %make
 
@@ -38,4 +37,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xfindproxy
-%{_mandir}/man1/xfindproxy.1x*
+%{_mandir}/man1/xfindproxy.1*
