@@ -1,11 +1,10 @@
 Name: xfindproxy
 Version: 1.0.2
-Release: %mkrel 4
+Release: 5
 Summary: Locate proxy services
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: pkgconfig(ice) >= 1.0.0
 BuildRequires: pkgconfig(x11) >= 1.0.0
