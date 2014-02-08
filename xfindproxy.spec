@@ -1,6 +1,6 @@
 Name: xfindproxy
 Version: 1.0.2
-Release: 5
+Release: 6
 Summary: Locate proxy services
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
